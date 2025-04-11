@@ -1,25 +1,338 @@
-/* header {
+
+/* notes
+
+titre du site centralisé verticalement? (deja le cas)
+
+Alinéa pas necessaire sur web?  pour facilité la lisibilité, harmoniser les paragraphes 
+
+ecriture blanc sur orange a revoir, (ajout de marges?) (reserver le orange pour les titres et boutons avec ecritures plus grosses, reserver 
+le corps de texte au fonds gris foncés)
+
+tout justifier ? (alignement centrale pour harmonier? tout redre symetrique?)
+
+retirer le blanc de l'oeil du logo?
+
+mettre un espace avant les "!!"? 
+
+Titre en gras, revoir la hierahie H1 h2 h3
+
+
+page events
+
+2 titres avec la même hierachie? (il faut reduire les seconds titres en H2 pour respecter une hierachie) 
+
+pas besoin de rappeller les couleurs dans le texte d'intro, les labels marchent d'eux-même
+
+les Mois avec une Majuscule au début 
+
+On ne met pas les évènements passés? (??)
+
+Page event choisi
+
+La barre orange fait vide ( mettre la bannière de l'event directement à la place de la bannière de fond en haut)
+
+Pas sur qu'en terme de libililité le titre sur l'image soit lisible (Les bannières serons adaptées pour accueillir un titre en bas a gauche)
+
+Garder la couleur de la tuile quelque part pour etre dans la continuité, ajouter les informations importantes 
+(hierachiser le tout, zone infos importantes, puise description générale)
+
+Le fil d'ariane! soit partout, soit nul part 
+
+faute de frappe sur le bouton "s'inscrire à l'évènement" (oups, effectivement)
+
+
+
+
+accueil (encore)) 
+
+Le footer parait énorme (il est pas fini, sa taille dépendra des éléments finaux dedans) 
+des collones différentes sont préconisées pour plus de légèreté
+
+harmoniser les majuscules au debut des mots
+
+faire monter les réseaux en haut pour plus de lisibilité (section réseaux à part, sinon pourquoi pas les affichers sur la page d'accueil)
+
+remplacer les textes réseaux par juste les logos (utiliser FontAwesome) 
+
+accueil mobile
+
+Pourquoi deux couleurs sur le bandeau orange? (pas indispensable mais permet d'éviter d'avoir un gros pathé)
+
+Les sous menus ont l'air vraiment petit pour des gros doigts (ca m'a l'air ok sur ecran 4.7" perso)
+
+Dans le menu burger on peux filtrer par type d'event, plus simple de permettre le filtre sur la page event (ca sera retiré, on aura pas 500 events non plus) Il y aura une section pour
+pour  expliquer qu'est ce qu'est une furwalk, furbar, etc) 
+pas sur que la flèche gauche soit bien placée, mieux vaut la mettre au dessus (la flèche est placé dans le carré de bas edu menu burger, au dessus c'est la barre avec "Midrab'Est") 
+
+Il faudrait centrer les flèches verticales sur la barre (vraiment necessaire sur mobile? cela risquerait de la rendre trop petite) 
+
+
+
+*/
+
+
+
+
+
+
+
+/* .point{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 100px;
+}
+*/
+
+
+body {
+    background-color: rgb(46, 46, 46);
+} 
+
+
+
+.barre-menu {
     background-color: orange;
     height: 70px;
     width: 100%;
     display: flex;
-    
+
     align-items: center;
     color: white;
     font-size: 60px;
-    font:
+    position: absolute;
+    top: 10%;
+    justify-content: space-between;
+    
+   
+    
 }
 
-.logo_header img{
-    height: 70px;
+
+
+.logo-menu{
+    display: flex;
+    height: 180px;
+    margin-left: 20px;
+    margin-right: 50px;
+    position: absolute;
+    top: -110% ;
+    left: 20px;
+    
+    
+
+}
+
+.Midrabest-titre{
+    font-size: 70px;
+    
+
+}
+    
+
+
+.nav-menu {
+    margin-right: 20px;
+    
+    
+    
+    
+}
+
+.subnav-menu{
+    display: flex;
+    
+    justify-content: space-between;
+    
+    
+   
+   
+    
+    
+    
+
+    
+    
 }
 
 
+
+.text-menu{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+   
+    
+    height: 30px;
+    width: 200px;
+    background-color: #4CAF50;
+    
+    
+}
+
+.text-menu a{ 
+    
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.invisible{
+    color: #ffffff;
+}
+
+
+
+/*
 h1{
     color:rgb(255, 174, 0);
 }
-<img src="logo.png" alt="Si vous voyez ca c'est que jai mal fait mon travail mdrr>"
 
-.body {
-    background-color: rgb(255, 174, 0)
-} */
+*/
+
+
+/* section 1 */
+
+.boiteimagedefond{
+    position:relative ; 
+    max-width: 100% ;
+    display: flex;
+    object-fit: cover;
+
+
+}
+.boiteimagedefondimg{
+    height: 800px;
+    width: 1920px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.Metztorii{
+    display: flex;
+    height: 150%;
+    position:absolute;
+    right: 10%;
+    bottom: 5%;
+    z-index: 0;
+
+}
+
+
+.titrepresentation{
+    
+    background-color: #ffffff00;
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.boutonplusdinfos{
+    background-color: #ffffff54;
+    position: absolute;
+    bottom: 20%;
+    right: 3%;
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+.texteboutonplusdinfos a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.texteboutonplusdinfos{
+    color: rgb(255, 255, 255);
+    position: relative;
+    
+    font-size: 120px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    border-style: none;
+
+}
+
+/*
+.boiteImageDefond{
+    position:relative
+    height: 800px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+*/ 
+
+/* section 2*/
+
+
+.presentation{
+    height: 200px;
+    background-color: rgb(59, 59, 59);
+    align-items: center;
+
+}
+
+/* section 3 */
+
+.container {
+    display: flex;
+    gap: 20px; /* Espacement entre les boîtes */
+  }
+  
+  .box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+
+
+
+
+
+.titrepresentation1{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.texte1-20{
+    color: rgb(216, 216, 216);
+    font-size: 20px;
+}
+
+
+.titretresentation2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+} 
+
