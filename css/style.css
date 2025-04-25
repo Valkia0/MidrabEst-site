@@ -1,74 +1,5 @@
 
-/* notes
 
-titre du site centralisé verticalement? (deja le cas)
-
-Alinéa pas necessaire sur web?  pour facilité la lisibilité, harmoniser les paragraphes 
-
-ecriture blanc sur orange a revoir, (ajout de marges?) (reserver le orange pour les titres et boutons avec ecritures plus grosses, reserver 
-le corps de texte au fonds gris foncés)
-
-tout justifier ? (alignement centrale pour harmonier? tout redre symetrique?)
-
-retirer le blanc de l'oeil du logo?
-
-mettre un espace avant les "!!"? 
-
-Titre en gras, revoir la hierahie H1 h2 h3
-
-
-page events
-
-2 titres avec la même hierachie? (il faut reduire les seconds titres en H2 pour respecter une hierachie) 
-
-pas besoin de rappeller les couleurs dans le texte d'intro, les labels marchent d'eux-même
-
-les Mois avec une Majuscule au début 
-
-On ne met pas les évènements passés? (??)
-
-Page event choisi
-
-La barre orange fait vide ( mettre la bannière de l'event directement à la place de la bannière de fond en haut)
-
-Pas sur qu'en terme de libililité le titre sur l'image soit lisible (Les bannières serons adaptées pour accueillir un titre en bas a gauche)
-
-Garder la couleur de la tuile quelque part pour etre dans la continuité, ajouter les informations importantes 
-(hierachiser le tout, zone infos importantes, puise description générale)
-
-Le fil d'ariane! soit partout, soit nul part 
-
-faute de frappe sur le bouton "s'inscrire à l'évènement" (oups, effectivement)
-
-
-
-
-accueil (encore)) 
-
-Le footer parait énorme (il est pas fini, sa taille dépendra des éléments finaux dedans) 
-des collones différentes sont préconisées pour plus de légèreté
-
-harmoniser les majuscules au debut des mots
-
-faire monter les réseaux en haut pour plus de lisibilité (section réseaux à part, sinon pourquoi pas les affichers sur la page d'accueil)
-
-remplacer les textes réseaux par juste les logos (utiliser FontAwesome) 
-
-accueil mobile
-
-Pourquoi deux couleurs sur le bandeau orange? (pas indispensable mais permet d'éviter d'avoir un gros pathé)
-
-Les sous menus ont l'air vraiment petit pour des gros doigts (ca m'a l'air ok sur ecran 4.7" perso)
-
-Dans le menu burger on peux filtrer par type d'event, plus simple de permettre le filtre sur la page event (ca sera retiré, on aura pas 500 events non plus) Il y aura une section pour
-pour  expliquer qu'est ce qu'est une furwalk, furbar, etc) 
-pas sur que la flèche gauche soit bien placée, mieux vaut la mettre au dessus (la flèche est placé dans le carré de bas edu menu burger, au dessus c'est la barre avec "Midrab'Est") 
-
-Il faudrait centrer les flèches verticales sur la barre (vraiment necessaire sur mobile? cela risquerait de la rendre trop petite) 
-
-
-
-*/
 
 
 
@@ -115,9 +46,9 @@ body {
     height: 180px;
     margin-left: 20px;
     margin-right: 50px;
-    position: absolute;
+    /*position: absolute;
     top: -110% ;
-    left: 20px;
+    left: 20px; */
     
     
 
@@ -133,6 +64,7 @@ body {
 
 .nav-menu {
     margin-right: 20px;
+    margin-left: 20px;
     
     
     
@@ -141,18 +73,7 @@ body {
 
 .subnav-menu{
     display: flex;
-    
     justify-content: space-between;
-    
-    
-   
-   
-    
-    
-    
-
-    
-    
 }
 
 
@@ -165,19 +86,24 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-size: 30px;
-   
-    
-    height: 30px;
+    height: 70px;
     width: 200px;
-    background-color: #4CAF50;
-    
-    
+    background-color: orange;
+}
+
+.text-menu:hover {
+    background-color: rgb(170, 82, 0);
+    cursor: pointer;
 }
 
 .text-menu a{ 
     
     text-decoration: none;
     color: #ffffff;
+    font-family: 'Roboto';
+    
+    
+    
 }
 
 .invisible{
@@ -215,12 +141,42 @@ h1{
     display: flex;
     height: 150%;
     position:absolute;
-    right: 10%;
+    right: 3%;
     bottom: 5%;
     z-index: 0;
 
 }
 
+.Metstorii:hover {
+    cursor: pointer;
+   
+}
+
+/* variantes */
+
+.text-menu-selected{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    height: 70px;
+    width: 200px;
+    background-color: orange;
+}
+
+.text-menu-selected a{ 
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: 900;
+    
+    
+    
+}
 
 .titrepresentation{
     
@@ -282,24 +238,110 @@ h1{
 */ 
 
 /* section 2*/
-
-
-.presentation{
-    height: 200px;
+.presentation-1{
+    height: 800px;
     background-color: rgb(59, 59, 59);
     align-items: center;
+    position: relative;
 
 }
 
-/* section 3 */
+/*.presentation-2{
+    height: 70px;
+    width: 100%;
+    background-color: orange;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+} */
 
-.container {
+.titrepresentation1{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.titretresentation2{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+    background-color: orange;
+    
+   
     display: flex;
-    gap: 20px; /* Espacement entre les boîtes */
+    justify-content: space-around;
+    font-family: 'Roboto';
+} 
+
+.titrepresentation2 a{
+    top: 100px;
+}
+
+.presentation-content{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+
+.presentation-text{
+    flex: 1;
+    font-size: 18px;
+    display: flex;
+
+    
+}
+
+.presentation-p{
+    
+    color: rgb(216, 216, 216);
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.presentation-pic{
+    display: flex;
+    justify-content: right;
+  
+}
+.presentation-img{
+  
+    width: 40%;
+    height: 500px;
+    max-height: 100%;
+    margin-left: 60px;
+    margin-right: 20px;
+    object-fit: cover;
+    display: flex;
+    justify-content: right;
+}
+
+    /* Events rapides */
+
+ .evenements-rapides{
+    margin-inline: 2%;
+ } 
+  .evenements-r-title{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    height: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
+  }
+
+  
+
+  .container {
+    display: flex;
+    gap: 20px; 
   }
   
   .box {
-    background-color: #4CAF50;
+    background-color: #757575;
     color: white;
     padding: 30px;
     width: 30%;
@@ -309,6 +351,527 @@ h1{
     align-items: center;
     border-radius: 20px;
     text-align: center;
+    margin-top: 30px;
+  }
+
+  .test1{
+    display: flex;
+    gap: 20px; 
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+
+  .button-plus-events{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 30px;
+    width: 30%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    border-radius: 20px;
+    margin-top: 30px;
+    border: solid #ffffff 2px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+  }
+
+  .button-plus-events a{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+    
+  }
+
+  .button-plus-events:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    
+    border-radius: 20px;
+}
+
+.button-plus-events:hover a{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #000000;
+    }
+
+.events-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* case d'events*/ 
+
+.testcase{
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+    background-color: orange;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+   
+
+}
+
+.testcaseinterieur{
+    height: 490px;
+    width: 490px;
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    position: absolute;
+    right: 1%;
+    top: 0.9%;
+}
+
+.testcaseimg{
+    height: 300px;
+    width: 98%;
+    object-fit: cover;
+    z-index: 3;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.testcasetitre{
+    position: absolute;
+    font-family: "Roboto";
+    font-size: 40px;
+    top: 270px;
+    left: 17px;
+}
+.testcasetitre p{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.testcasedate{ 
+    position: absolute;
+    font-family: "Roboto";
+    font-size: 15px;
+    top: 350px;
+    left: 190px;
+}
+
+.testcasedate p{
+    color: #ffffff;
+}
+
+.testcase2{
+    position: absolute;
+    top: 370px;
+    left: 17px;
+    left: 95px;
+}
+
+.tag{
+    z-index: 4;
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.testcasetype{
+    z-index: 5;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+
+.testcasetype p{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Roboto';
+}
+
+.testcasebouton{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 30px;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: solid #ffffff 2px;
+    
+    
+  }
+
+  .testcasebouton a{
+    
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+
+    
+  }
+
+  .testcasebouton:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    width: 300px;
+    height: 70px;
+    align-items: center;
+    border-radius: 20px;
+    
+  
+  } 
+    
+  .testcasebouton:hover a{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #000000;
+    }
+
+
+/* Reseaux rapides*/
+
+.margin-reseaux{
+    
+    height: 60px;
+    width: 99.15%;
+    background-color: rgb(59, 59, 59);
+    align-items: center;
+    position: absolute;
+}
+
+.reseaux-rapides{
+    height: 800px;
+    background-color: rgb(59, 59, 59);
+    align-items: center;
+    position: relative;
+}
+
+.titre-reseaux-rapides{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
+}
+
+.reseaux-r-content{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    margin-bottom: 90px;
+}
+
+.icon-reseaux{
+    height: 100px;
+    
+}
+
+.texte-reseaux p{
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+.button-reseaux{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 10px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: solid #ffffff 2px;
+    cursor: pointer;
+    
+    
+  }
+
+  .button-reseaux a{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    top: -7px;
+  }
+
+  .button-reseaux:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    
+    border-radius: 20px;
+}
+
+.button-reseaux:hover a{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #000000;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: orange;
+   
+    
+   
+}
+
+
+
+.baspage1{
+    margin-top: 20px;
+    background-color: rgb(88, 58, 0);
+    height: 700px;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    justify-content: space-between;
+}
+
+.bas-reseaux{
+    margin-top: 20px;
+    display: flex;
+    
+    justify-content: space-between;
+    justify-content: center;
+    
+}
+
+.reseaux-liste-footer{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+
+   
+}
+
+.reseaux-footer{
+    margin: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.icon-footer{
+    
+    display: flex;
+    height: 30px;
+    text-decoration: none;
+}
+
+.hr-footer{
+    border: none;
+    height: 1px;
+    background-color: #323232;
+    margin: 10px 0;
+}
+
+
+.bas-main{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.text-footer{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 30px;
+    margin: 30px;
+    margin-top: -0px;
+    margin-bottom: -0px;
+    
+}
+
+.text-footer a{ 
+    
+    text-decoration: none;
+    color: #323232;
+    font-family: 'Roboto';
+    
+    
+    
+}
+
+.text-footer:hover a{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.bas-page-2{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    height: 30px;
+    margin: 30px;
+    
+    margin-bottom: -0px;
+}
+
+.footer-dredits{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.text-footer2{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 30px;
+    margin: 30px;
+   
+    
+}
+
+.text-footer2 a{ 
+    
+    text-decoration: none;
+    color: #323232;
+    font-family: 'Roboto';
+    
+    
+    
+}
+
+.text-footer2:hover a{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* .Copyright{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 30px;
+    margin: 30px;
+}
+
+.copyright a{
+    
+} */
+
+
+
+
+
+
+
+
+
+
+/*Variantes*/
+
+
+
+
+/*Page evenements*/
+
+
+
+.boiteimagedefond-variante{
+    position:relative ; 
+    max-width: 100% ;
+    display: flex;
+    object-fit: cover;
+
+
+}
+.boiteimagedefondimg-variante{
+    height: 500px;
+    width: 1920px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.Metztorii-variante{
+    display: flex;
+    height: 250%;
+    position:absolute;
+    right: 3%;
+    bottom: 5%;
+    z-index: 0;
+
+}
+
+.Metstorii-variante:hover{
+    cursor: pointer;
+   
+}
+
+.evenements-r-title-variante{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    height: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
   }
 
 
@@ -316,23 +879,526 @@ h1{
 
 
 
-.titrepresentation1{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    body{
+        font-size: 14px;
+        flex-direction: column;
+        overflow-x: hidden;
+        
+    }
+    p{
+        font-size: 14px;
+    }
+    /* menu*/
+    .barre-menu {
+        background-color: orange;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        color: white;
+        font-size: 10px;
+        position: absolute;
+        top: 0%;
+        justify-content: space-between;
+        
+       
+        
+    }
+    
+    .logo-menu{
+        display: flex;
+        height: 90px;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        /*position: absolute;
+        top: -110% ;
+        left: 20px; */
+        
+        
+    
+    }
+    .text-menu{
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+    
+        height: 70px;
+        width: 200px;
+        background-color: orange;
+    }
+    /*annonce d'accueil*/
+    .boiteimagedefond{
+        position:relative ; 
+        max-width: 100% ;
+        display: flex;
+        object-fit: cover;
+        margin-bottom: -11%;
+        
+    
+    
+    }
+    .boiteimagedefondimg{
+        height: 700px;
+        width: 100%;
+        object-position: 20% 50%;
+        /*max-width: 100%;*/
+        
+    }
+    
+    .Metztorii{
+        display: flex;
+        height: 70%;
+        position:absolute;
+        left: 3%;
+        bottom: 5%;
+        z-index: 0;
+    
+    }
+    /* Presentation*/
+
+    .presentation-1{
+        height: 500px;
+        background-color: rgb(59, 59, 59);
+        align-items: center;
+        position: relative;
+    
+    }
+    .titretresentation2{
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        height: 60px;
+        width: 100%;
+        background-color: orange;
+        
+       
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Roboto';
+    } 
+    
+    .titrepresentation2 a{
+        top: 100px;
+    }
+    .presentation-content{
+        display: flex;
+        flex-direction: column;
+       
+    
+    }
+    
+    .presentation-text{
+        flex: 1;
+        position: absolute;
+        top: 50px;
+        
+        display: flex;
+        margin-right: 10%;
+        
+    }
+    
+    .presentation-p{
+        
+        color: rgb(216, 216, 216);
+        font-size: 14px;
+        text-align: center;
+        
+    }
+
+    .pre-image{
+        display: flex;
+        
+    }
+
+    .presentation-pic{
+        display: flex;
+        margin-right: 50%;
+      
+    }
+    
+    .presentation-img{
+       position: absolute;
+        display: block;
+        margin: 9%;
+        bottom: 2px;
+        height: 200px;
+        width: 80%;
+        object-position: 20% 50%;
+        
+        object-fit: cover;
+        
+        justify-content: center;
+    
+       
+    }
+
+        /* Events rapides */
+
+ .evenements-rapides{
+    margin-inline: 2%;
+ } 
+  .evenements-r-title{
     color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-align: center;
+    font-size: 36px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
+  }
+
+  
+
+  .container {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .box {
+    background-color: #757575;
+    color: white;
+    padding: 30px;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .test1{
+    display: flex;
+    gap: 20px; 
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+
+  .button-events{
+    background-color: orange;
+    color: white;
+    padding: 30px;
+    width: 30%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    
+  }
+
+  .button-events a{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .button-events:hover {
+    background-color: rgb(170, 82, 0);
+    cursor: pointer;
 }
 
-.texte1-20{
-    color: rgb(216, 216, 216);
+.events-row{
+    display: flex;
+    flex-direction: column;
+}
+
+/* case d'events*/ 
+
+.testcase{
+    margin-top: 10px;
+    height: 500px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+   
+
+}
+
+.testcaseinterieur{
+    height: 490px;
+    width: 98%;
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    top: 0.9%;
+}
+
+.testcaseimg{
+    height: 300px;
+    width: 98%;
+    object-fit: cover;
+    z-index: 3;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+.testcasetitre{
+    position: absolute;
+    font-family: "Roboto";
+    top: 300px;
+    left: 65px;
+    font-size: 20px;
+}
+.testcasetitre p{
+    color: #ffffff;
+    font-weight: bold;
     font-size: 20px;
 }
 
+.testcasedate{ 
+    position: absolute;
+    font-family: "Roboto";
+    font-size: 15px;
+    top: 350px;
+    left: 110px;
+}
 
-.titretresentation2{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-align: center;
+.testcasedate p{
+    color: #ffffff;
+}
+
+.testcase2{
+    position: absolute;
+    top: 370px;
+    left: 70px;
+    
+}
+
+.tag{
+    z-index: 4;
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.testcasetype{
+    z-index: 5;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    display: inline-block;
+    position: absolute;
+    left: -1px;
+    top: 99px;
+}
+
+.testcasetype p{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+}
+
+.testcasebouton{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 30px;
+    width: 220px;
+    height: 70px;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: solid #ffffff 2px;
+    
+    
+  }
+
+  .testcasebouton a{
+    
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+
+    
+  }
+
+  .testcasebouton:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    width: 300px;
+    height: 70px;
     align-items: center;
-} 
+    border-radius: 20px;
+    
+  
+  } 
+    
+  .testcasebouton:hover a{
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #000000;
 
+    }
+
+
+ /*variantes*/
+
+    .boiteimagedefond-variante{
+        position:relative ; 
+        max-width: 100% ;
+        display: flex;
+        object-fit: cover;
+    
+    
+    }
+    .boiteimagedefondimg-variante{
+        height: 300px;
+        width: 1920px;
+        object-fit: cover;
+        max-width: 100%;
+    }
+    
+    .Metztorii-variante{
+        display: flex;
+        height: 100%;
+        position:absolute;
+        right: 3%;
+        bottom: 5%;
+        z-index: 0;
+    
+    }
+    
+    .Metstorii-variante:hover{
+        cursor: pointer;
+       
+    }
+
+     
+  .evenements-r-title-variante{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    height: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    margin-bottom: 100px;
+    
+    text-align: center;
+  }
+    
+  .evenements-r-title-variante h3{
+    text-align: center;
+  }
+
+
+  /* footer */ 
+
+
+
+  .text-footer{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 30px;
+    margin: 5px;
+    margin-top: -0px;
+    margin-bottom: -0px;
+    
+}
+
+
+}
+
+
+/*.presentation{
+    height: 200px;
+    background-color: rgb(59, 59, 59);
+    align-items: center;
+
+} */
+
+/* section 3 */
+
+
+
+
+
+/* tests*/ 
+
+
+.imgtest{ 
+    background-color: #ffffff;
+}
